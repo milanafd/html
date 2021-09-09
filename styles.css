@@ -1,0 +1,876 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	font-size: 25px;
+	font-weight: 300;
+	margin: 10px;
+}
+h3 {
+	font-size: 21px;
+	font-weight: 100;
+	margin: 10px;
+	text-align:left;
+}
+body{
+	background: #333;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+p {
+	font-size: 20px;
+	text-align: justify;
+}
+li {
+	text-decoration: none;
+	color: white;
+	font-size: 15px;
+	font-weight: 100;
+	list-style-type: none;
+}
+
+/*Home Background*/
+.dragonBackground1 {
+	background: url('./img/shipDragon.jpg');	
+}
+.dragonBackground2 {
+	background: url('./img/CD.jpg');	
+}
+
+/*Fantasy Background*/
+.dragonBackground3 {
+	background: gray;	
+}
+.dragonBackground4 {
+	background: url('./img/shipDragon.jpg');	
+}
+.dragonBackground5 {
+	background: url('./img/d1.jpg');	
+}
+.dragonBackground6 {
+	background: gray;	
+}
+
+/*Gaming Background*/
+.dragonBackground7 {
+	background: gray;	
+}
+.dragonBackground8 {
+	background: url('./img/shipDragon.jpg');	
+}
+.dragonBackground9 {
+	background: url('./img/orangebd.jpg');	
+}
+.dragonBackground10 {
+	background: gray;	
+}
+
+/*Litrature Background*/
+.dragonBackground11 {
+	background: gray;	
+}
+.dragonBackground12 {
+	background: url('./img/shipDragon.jpg');	
+}
+.dragonBackground13 {
+	background: url('./img/grayDragon.jpg');	
+}
+.dragonBackground14 {
+	background: gray;	
+}
+
+/*Me Background*/
+.dragonBackground15 {
+	background: gray;	
+}
+.dragonBackground16 {
+	background: url('./img/shipDragon.jpg');	
+}
+.dragonBackground17 {
+	background: url('./img/skyrim-dragon.jpg');
+}
+.dragonBackground18 {
+	background: gray;	
+}
+
+/*Baord Games Background*/
+.dragonBackground19 {
+	background: gray;	
+}
+.dragonBackground20 {
+	background: url('./img/shipDragon.jpg');	
+}
+.dragonBackground21 {
+	background: url('./img/6dice.jpg');
+}
+.dragonBackground22 {
+	background: gray;	
+}
+
+/*History Background*/
+.dragonBackground23 {
+	background: gray;	
+}
+.dragonBackground24 {
+	background: url('./img/shipDragon.jpg');	
+}
+.dragonBackground25 {
+	background: url('./img/map.jpg');
+}
+.dragonBackground26 {
+	background: gray;	
+}
+
+/*Western Dragons Background*/
+.dragonBackground27 {
+	background: gray;	
+}
+.dragonBackground28 {
+	background: url('./img/shipDragon.jpg');	
+}
+.dragonBackground29 {
+	background: url('./img/western.jpg');
+}
+.dragonBackground30 {
+	background: gray;	
+}
+
+/*Eastern Dragons Background*/
+.dragonBackground31 {
+	background: gray;	
+}
+.dragonBackground32 {
+	background: url('./img/shipDragon.jpg');	
+}
+.dragonBackground33 {
+	background: url('./img/cDragon.jpg');
+}
+.dragonBackground34 {
+	background: gray;	
+}
+
+/*Art Background*/
+.dragonBackground35 {
+	background: gray;	
+}
+.dragonBackground36 {
+	background: url('./img/shipDragon.jpg');	
+}
+.dragonBackground37 {
+	background: url('./img/skyrim-dragon.jpg');
+}
+.dragonBackground38 {
+	background: gray;	
+}
+
+/*Architecture Background*/
+.dragonBackground39 {
+	background: gray;	
+}
+.dragonBackground40 {
+	background: url('./img/shipDragon.jpg');	
+}
+.dragonBackground41 {
+	background: url('./img/arch.jpg');
+}
+.dragonBackground42 {
+	background: gray;	
+}
+
+/*Imagination Background*/
+.dragonBackground43 {
+	background: gray;	
+}
+.dragonBackground44 {
+	background: url('./img/shipDragon.jpg');	
+}
+.dragonBackground45 {
+	background: url('./img/d20.jpg');
+}
+.dragonBackground46 {
+	background: gray;	
+}
+
+/*Religion Background*/
+.dragonBackground47 {
+	background: gray;	
+}
+.dragonBackground48 {
+	background: url('./img/shipDragon.jpg');	
+}
+.dragonBackground49 {
+	background: url('./img/skyrim-dragon.jpg');
+}
+.dragonBackground50 {
+	background: gray;	
+}
+
+/*Credits Background*/
+.dragonBackground51 {
+	background: gray;	
+}
+.dragonBackground52 {
+	background: url('./img/shipDragon.jpg');	
+}
+.dragonBackground53 {
+	background: url('./img/dragonWater.jfif');
+}
+.dragonBackground54 {
+	background: gray;	
+}
+
+/*Home container*/
+.container {
+	display:grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+}
+.container > div {
+	height: 280px;
+	background-size: cover;
+	background-attachment: fixed;
+	text-decoration: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	transition: all 0.5s ease-in;
+}
+.container > div:hover {
+	opacity: 0.7;
+	transform: scale(0.98);
+	background-attachment: fixed;
+}
+.container > div:nth-of-type(1) {
+	grid-column: 1 / 3;
+}
+.container > div:nth-of-type(6) {
+	grid-column: 3 / 5;
+}
+.container > div:nth-of-type(8) {
+	grid-column: 2 / 4;
+}
+.container > div:nth-of-type(12) {
+	grid-column: 3 / 5;
+}
+
+/*Fantasy container*/
+.container2 {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.container2 > div {
+	height: 380px;
+	background-size: cover;
+	background-attachment: fixed;
+	text-decoration: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	transition: all 0.5s ease-in;
+}
+.container2 > div:hover {
+	opacity: 0.7;
+	transform: scale(0.98);
+	background-attachment: fixed;
+}
+.container2 > div:nth-of-type(1) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+.container2 > div:nth-of-type(2) {
+	grid-column: 1 / 2;
+	height: 850px;
+	text-align: center;
+    margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container2 > div:nth-of-type(3) {
+	grid-column: 2 / 3;
+	height: 850px;
+	margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container2 > div:nth-of-type(4) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+
+/*Gaming container*/
+.container3 {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.container3 > div {
+	height: 380px;
+	background-size: cover;
+	background-attachment: fixed;
+	text-decoration: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	transition: all 0.5s ease-in;
+}
+.container3 > div:hover {
+	opacity: 0.7;
+	transform: scale(0.98);
+	background-attachment: fixed;
+}
+.container3 > div:nth-of-type(1) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+.container3 > div:nth-of-type(2) {
+	grid-column: 1 / 2;
+	height: 850px;
+	text-align: center;
+    margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container3 > div:nth-of-type(3) {
+	grid-column: 2 / 3;
+	height: 850px;
+	margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container3 > div:nth-of-type(4) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+
+/*Litrature container*/
+.container4 {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.container4 > div {
+	height: 380px;
+	background-size: cover;
+	background-attachment: fixed;
+	text-decoration: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	transition: all 0.5s ease-in;
+}
+.container4 > div:hover {
+	opacity: 0.7;
+	transform: scale(0.98);
+	background-attachment: fixed;
+}
+.container4 > div:nth-of-type(1) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+.container4 > div:nth-of-type(2) {
+	grid-column: 1 / 2;
+	height: 850px;
+	text-align: center;
+    margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container4 > div:nth-of-type(3) {
+	grid-column: 2 / 3;
+	height: 850px;
+	margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container4 > div:nth-of-type(4) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+
+/*Me container*/
+.container5 {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.container5 > div {
+	height: 380px;
+	background-size: cover;
+	background-attachment: fixed;
+	text-decoration: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	transition: all 0.5s ease-in;
+}
+.container5 > div:hover {
+	opacity: 0.7;
+	transform: scale(0.98);
+	background-attachment: fixed;
+}
+.container5 > div:nth-of-type(1) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+.container5 > div:nth-of-type(2) {
+	grid-column: 1 / 2;
+	height: 850px;
+	text-align: center;
+    margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container5 > div:nth-of-type(3) {
+	grid-column: 2 / 3;
+	height: 50px;
+	margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container5 > div:nth-of-type(4) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+
+/*Baord Games container*/
+.container6 {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.container6 > div {
+	height: 380px;
+	background-size: cover;
+	background-attachment: fixed;
+	text-decoration: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	transition: all 0.5s ease-in;
+}
+.container6 > div:hover {
+	opacity: 0.7;
+	transform: scale(0.98);
+	background-attachment: fixed;
+}
+.container6 > div:nth-of-type(1) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+.container6 > div:nth-of-type(2) {
+	grid-column: 1 / 2;
+	height: 850px;
+	text-align: center;
+    margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container6 > div:nth-of-type(3) {
+	grid-column: 2 / 3;
+	height: 50px;
+	margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container6 > div:nth-of-type(4) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+
+/*History container*/
+.container7 {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.container7 > div {
+	height: 380px;
+	background-size: cover;
+	background-attachment: fixed;
+	text-decoration: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	transition: all 0.5s ease-in;
+}
+.container7 > div:hover {
+	opacity: 0.7;
+	transform: scale(0.98);
+	background-attachment: fixed;
+}
+.container7 > div:nth-of-type(1) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+.container7 > div:nth-of-type(2) {
+	grid-column: 1 / 2;
+	height: 850px;
+	text-align: center;
+    margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container7 > div:nth-of-type(3) {
+	grid-column: 2 / 3;
+	height: 50px;
+	margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container7 > div:nth-of-type(4) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+
+/*Western Dragons container*/
+.container8 {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.container8 > div {
+	height: 380px;
+	background-size: cover;
+	background-attachment: fixed;
+	text-decoration: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	transition: all 0.5s ease-in;
+}
+.container8 > div:hover {
+	opacity: 0.7;
+	transform: scale(0.98);
+	background-attachment: fixed;
+}
+.container8 > div:nth-of-type(1) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+.container8 > div:nth-of-type(2) {
+	grid-column: 1 / 2;
+	height: 850px;
+	text-align: center;
+    margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container8 > div:nth-of-type(3) {
+	grid-column: 2 / 3;
+	height: 50px;
+	margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container8 > div:nth-of-type(4) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+
+/*Eastern Dragons container*/
+.container9 {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.container9 > div {
+	height: 380px;
+	background-size: cover;
+	background-attachment: fixed;
+	text-decoration: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	transition: all 0.5s ease-in;
+}
+.container9 > div:hover {
+	opacity: 0.7;
+	transform: scale(0.98);
+	background-attachment: fixed;
+}
+.container9 > div:nth-of-type(1) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+.container9 > div:nth-of-type(2) {
+	grid-column: 1 / 2;
+	height: 850px;
+	text-align: center;
+    margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container9 > div:nth-of-type(3) {
+	grid-column: 2 / 3;
+	height: 50px;
+	margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container9 > div:nth-of-type(4) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+
+/*Art container*/
+.container10 {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.container10 > div {
+	height: 380px;
+	background-size: cover;
+	background-attachment: fixed;
+	text-decoration: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	transition: all 0.5s ease-in;
+}
+.container10 > div:hover {
+	opacity: 0.7;
+	transform: scale(0.98);
+	background-attachment: fixed;
+}
+.container10 > div:nth-of-type(1) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+.container10 > div:nth-of-type(2) {
+	grid-column: 1 / 2;
+	height: 850px;
+	text-align: center;
+    margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container10 > div:nth-of-type(3) {
+	grid-column: 2 / 3;
+	height: 50px;
+	margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container10 > div:nth-of-type(4) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+
+/*Architecture container*/
+.container11 {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.container11 > div {
+	height: 380px;
+	background-size: cover;
+	background-attachment: fixed;
+	text-decoration: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	transition: all 0.5s ease-in;
+}
+.container11 > div:hover {
+	opacity: 0.7;
+	transform: scale(0.98);
+	background-attachment: fixed;
+}
+.container11 > div:nth-of-type(1) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+.container11 > div:nth-of-type(2) {
+	grid-column: 1 / 2;
+	height: 850px;
+	text-align: center;
+    margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container11 > div:nth-of-type(3) {
+	grid-column: 2 / 3;
+	height: 50px;
+	margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container11 > div:nth-of-type(4) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+
+/*Imagination container*/
+.container12 {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.container12 > div {
+	height: 380px;
+	background-size: cover;
+	background-attachment: fixed;
+	text-decoration: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	transition: all 0.5s ease-in;
+}
+.container12 > div:hover {
+	opacity: 0.7;
+	transform: scale(0.98);
+	background-attachment: fixed;
+}
+.container12 > div:nth-of-type(1) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+.container12 > div:nth-of-type(2) {
+	grid-column: 1 / 2;
+	height: 850px;
+	text-align: center;
+    margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container12 > div:nth-of-type(3) {
+	grid-column: 2 / 3;
+	height: 50px;
+	margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container12 > div:nth-of-type(4) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+
+/*Religion container*/
+.container13 {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.container13 > div {
+	height: 380px;
+	background-size: cover;
+	background-attachment: fixed;
+	text-decoration: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	transition: all 0.5s ease-in;
+}
+.container13 > div:hover {
+	opacity: 0.7;
+	transform: scale(0.98);
+	background-attachment: fixed;
+}
+.container13 > div:nth-of-type(1) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+.container13 > div:nth-of-type(2) {
+	grid-column: 1 / 2;
+	height: 850px;
+	text-align: center;
+    margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container13 > div:nth-of-type(3) {
+	grid-column: 2 / 3;
+	height: 50px;
+	margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container13 > div:nth-of-type(4) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+
+/*Credits container*/
+.container14 {
+	display:grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 10px;
+}
+.container14 > div {
+	height: 380px;
+	background-size: cover;
+	background-attachment: fixed;
+	text-decoration: none;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	
+	transition: all 0.5s ease-in;
+}
+.container14 > div:hover {
+	opacity: 0.7;
+	transform: scale(0.98);
+	background-attachment: fixed;
+}
+.container14 > div:nth-of-type(1) {
+	grid-column: 1 / 3;
+	height: 50px;
+}
+.container14 > div:nth-of-type(2) {
+	grid-column: 1 / 2;
+	height: 850px;
+	text-align: center;
+    margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container14 > div:nth-of-type(3) {
+	grid-column: 2 / 3;
+	height: 50px;
+	margin: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.container14 > div:nth-of-type(4) {
+	grid-column: 1 / 3;
+	height: 50px;
+}	
